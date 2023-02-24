@@ -3,6 +3,8 @@ package tictactoe;
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import java.awt.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class Board extends JPanel{
     public enum State {
@@ -12,6 +14,8 @@ public class Board extends JPanel{
     public static boolean isNextMoveX = true;
     public Board() {
 
+        Logger logger = Logger.getLogger(Board.class.getName());
+        logger.log(Level.WARNING, "Hello " + logger.getName());
         setBorder(new EmptyBorder(10, 10, 10, 10));
 
         JLabel LabelStatus = new JLabel();
@@ -50,7 +54,7 @@ public class Board extends JPanel{
         ButtonReset.addActionListener(e -> {
             for (int temp1 = 3; temp1 > 0; temp1--) {
                 for (int temp2 = 0; temp2 < 3; temp2++) {
-                    board[temp1 -1][temp2].setText("   ");
+                    board[temp1 -1][temp2].setText(" ");
                 }
             }
             gameState = State.NOT_STARTED;
@@ -67,26 +71,26 @@ public class Board extends JPanel{
 
     public String isWon(Cell[][] board) {
         for (int i = 0; i < 3; i++) {
-            if (!board[i][0].getText().equals("   ") && board[i][0].getText().equals(board[i][1].getText()) && board[i][1].getText().equals(board[i][2].getText())) {
+            if (!board[i][0].getText().equals(" ") && board[i][0].getText().equals(board[i][1].getText()) && board[i][1].getText().equals(board[i][2].getText())) {
                 return board[i][0].getText();
             }
         }
         for (int i = 0; i < 3; i++) {
-            if (!board[0][i].getText().equals("   ") && board[0][i].getText().equals(board[1][i].getText()) && board[1][i].getText().equals(board[2][i].getText())) {
+            if (!board[0][i].getText().equals(" ") && board[0][i].getText().equals(board[1][i].getText()) && board[1][i].getText().equals(board[2][i].getText())) {
                 return board[0][i].getText();
             }
         }
-        if (!board[0][0].getText().equals("   ") && board[0][0].getText().equals(board[1][1].getText()) && board[1][2].getText().equals(board[2][2].getText())) {
+        if (!board[0][0].getText().equals(" ") && board[0][0].getText().equals(board[1][1].getText()) && board[1][1].getText().equals(board[2][2].getText())) {
             return board[1][1].getText();
         }
-        if (!board[0][2].getText().equals("   ") && board[0][2].getText().equals(board[1][1].getText()) && board[1][1].getText().equals(board[2][0].getText())) {
+        if (!board[0][2].getText().equals(" ") && board[0][2].getText().equals(board[1][1].getText()) && board[1][1].getText().equals(board[2][0].getText())) {
             return board[1][1].getText();
         }
-        return "   ";
+        return null;
     }
     public boolean isDraw(Cell[][] board) {
         for (int i = 0; i < 9; i++) {
-            if (board[i / 3][i % 3].getText().equals("   ") ) return false;
+            if (board[i / 3][i % 3].getText().equals(" ") ) return false;
         }
         return true;
     }

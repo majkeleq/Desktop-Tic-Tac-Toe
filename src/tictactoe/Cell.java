@@ -9,7 +9,8 @@ import java.awt.event.ActionListener;
 public class Cell extends JButton implements ActionListener {
         public Cell(String number) {
         setName("Button" + number);
-        setText("   ");
+        //setText(getName());
+        setText(" ");
         setFocusPainted(false);
         //setBorderPainted(true);
         //setBorder(BorderFactory.createLineBorder(Color.BLACK));
