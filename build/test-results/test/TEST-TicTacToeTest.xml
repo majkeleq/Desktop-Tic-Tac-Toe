@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TicTacToeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-02-24T13:33:06" hostname="DESKTOP-77HAML8" time="15.09">
+<testsuite name="TicTacToeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-02-26T19:26:56" hostname="DESKTOP-77HAML8" time="15.073">
   <properties/>
-  <testcase name="start" classname="TicTacToeTest" time="15.09"/>
+  <testcase name="start" classname="TicTacToeTest" time="15.073"/>
   <system-out><![CDATA[?[1;31m
 Start test 1?[0m
 ?[1;31m
@@ -109,5 +109,75 @@ Start test 52?[0m
 ?[1;31m
 Start test 53?[0m
 ]]></system-out>
-  <system-err><![CDATA[]]></system-err>
+  <system-err><![CDATA[?[0;34mFeb 26, 2023 8:26:58 PM tictactoe.TicTacToe lambda$initComponents$0
+?[0m?[0;34mINFO: ButtonA1 clicked
+?[0m?[0;34mFeb 26, 2023 8:26:59 PM tictactoe.TicTacToe lambda$initComponents$0
+?[0m?[0;34mINFO: ButtonA3 clicked
+?[0m?[0;34mFeb 26, 2023 8:26:59 PM tictactoe.TicTacToe lambda$initComponents$1
+?[0m?[0;34mINFO: ButtonReset clicked
+?[0m?[0;34mFeb 26, 2023 8:26:59 PM tictactoe.TicTacToe lambda$initComponents$0
+?[0m?[0;34mINFO: ButtonA1 clicked
+?[0m?[0;34mFeb 26, 2023 8:26:59 PM tictactoe.TicTacToe lambda$initComponents$0
+?[0m?[0;34mINFO: ButtonB1 clicked
+?[0m?[0;34mFeb 26, 2023 8:27:00 PM tictactoe.TicTacToe lambda$initComponents$0
+?[0m?[0;34mINFO: ButtonC3 clicked
+?[0m?[0;34mFeb 26, 2023 8:27:00 PM tictactoe.TicTacToe lambda$initComponents$0
+?[0m?[0;34mINFO: ButtonB3 clicked
+?[0m?[0;34mFeb 26, 2023 8:27:00 PM tictactoe.TicTacToe lambda$initComponents$0
+?[0m?[0;34mINFO: ButtonB2 clicked
+?[0m?[0;34mFeb 26, 2023 8:27:01 PM tictactoe.TicTacToe lambda$initComponents$1
+?[0m?[0;34mINFO: ButtonReset clicked
+?[0m?[0;34mFeb 26, 2023 8:27:01 PM tictactoe.TicTacToe lambda$initComponents$0
+?[0m?[0;34mINFO: ButtonB2 clicked
+?[0m?[0;34mFeb 26, 2023 8:27:01 PM tictactoe.TicTacToe lambda$initComponents$0
+?[0m?[0;34mINFO: ButtonA1 clicked
+?[0m?[0;34mFeb 26, 2023 8:27:01 PM tictactoe.TicTacToe lambda$initComponents$0
+?[0m?[0;34mINFO: ButtonC1 clicked
+?[0m?[0;34mFeb 26, 2023 8:27:02 PM tictactoe.TicTacToe lambda$initComponents$0
+?[0m?[0;34mINFO: ButtonA3 clicked
+?[0m?[0;34mFeb 26, 2023 8:27:02 PM tictactoe.TicTacToe lambda$initComponents$0
+?[0m?[0;34mINFO: ButtonA2 clicked
+?[0m?[0;34mFeb 26, 2023 8:27:02 PM tictactoe.TicTacToe lambda$initComponents$0
+?[0m?[0;34mINFO: ButtonC2 clicked
+?[0m?[0;34mFeb 26, 2023 8:27:03 PM tictactoe.TicTacToe lambda$initComponents$0
+?[0m?[0;34mINFO: ButtonB3 clicked
+?[0m?[0;34mFeb 26, 2023 8:27:03 PM tictactoe.TicTacToe lambda$initComponents$0
+?[0m?[0;34mINFO: ButtonB1 clicked
+?[0m?[0;34mFeb 26, 2023 8:27:03 PM tictactoe.TicTacToe lambda$initComponents$0
+?[0m?[0;34mINFO: ButtonC3 clicked
+?[0m?[0;34mFeb 26, 2023 8:27:04 PM tictactoe.TicTacToe lambda$initComponents$1
+?[0m?[0;34mINFO: ButtonReset clicked
+?[0m?[0;34mFeb 26, 2023 8:27:04 PM tictactoe.TicTacToe lambda$initComponents$0
+?[0m?[0;34mINFO: ButtonA2 clicked
+?[0m?[0;34mFeb 26, 2023 8:27:04 PM tictactoe.TicTacToe lambda$initComponents$0
+?[0m?[0;34mINFO: ButtonB2 clicked
+?[0m?[0;34mFeb 26, 2023 8:27:05 PM tictactoe.TicTacToe lambda$initComponents$0
+?[0m?[0;34mINFO: ButtonA1 clicked
+?[0m?[0;34mFeb 26, 2023 8:27:05 PM tictactoe.TicTacToe lambda$initComponents$0
+?[0m?[0;34mINFO: ButtonA3 clicked
+?[0m?[0;34mFeb 26, 2023 8:27:05 PM tictactoe.TicTacToe lambda$initComponents$0
+?[0m?[0;34mINFO: ButtonC1 clicked
+?[0m?[0;34mFeb 26, 2023 8:27:06 PM tictactoe.TicTacToe lambda$initComponents$0
+?[0m?[0;34mINFO: ButtonB1 clicked
+?[0m?[0;34mFeb 26, 2023 8:27:06 PM tictactoe.TicTacToe lambda$initComponents$0
+?[0m?[0;34mINFO: ButtonC2 clicked
+?[0m?[0;34mFeb 26, 2023 8:27:06 PM tictactoe.TicTacToe lambda$initComponents$0
+?[0m?[0;34mINFO: ButtonB3 clicked
+?[0m?[0;34mFeb 26, 2023 8:27:08 PM tictactoe.TicTacToe lambda$initComponents$1
+?[0m?[0;34mINFO: ButtonReset clicked
+?[0m?[0;34mFeb 26, 2023 8:27:08 PM tictactoe.TicTacToe lambda$initComponents$1
+?[0m?[0;34mINFO: ButtonReset clicked
+?[0m?[0;34mFeb 26, 2023 8:27:08 PM tictactoe.TicTacToe lambda$initComponents$0
+?[0m?[0;34mINFO: ButtonC1 clicked
+?[0m?[0;34mFeb 26, 2023 8:27:08 PM tictactoe.TicTacToe lambda$initComponents$0
+?[0m?[0;34mINFO: ButtonB1 clicked
+?[0m?[0;34mFeb 26, 2023 8:27:09 PM tictactoe.TicTacToe lambda$initComponents$0
+?[0m?[0;34mINFO: ButtonB2 clicked
+?[0m?[0;34mFeb 26, 2023 8:27:09 PM tictactoe.TicTacToe lambda$initComponents$0
+?[0m?[0;34mINFO: ButtonC2 clicked
+?[0m?[0;34mFeb 26, 2023 8:27:09 PM tictactoe.TicTacToe lambda$initComponents$0
+?[0m?[0;34mINFO: ButtonA3 clicked
+?[0m?[0;34mFeb 26, 2023 8:27:11 PM tictactoe.TicTacToe lambda$initComponents$1
+?[0m?[0;34mINFO: ButtonReset clicked
+]]></system-err>
 </testsuite>

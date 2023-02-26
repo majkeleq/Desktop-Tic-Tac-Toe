@@ -2,6 +2,7 @@ package tictactoe;
 
 import javax.swing.*;
 import java.awt.*;
+import java.util.logging.*;
 
 public class TicTacToe extends JFrame{
     public enum State {
@@ -18,6 +19,17 @@ public class TicTacToe extends JFrame{
         setLocationRelativeTo(null); // added
         //JPanel board = new Board();
         //add(board);
+
+        initComponents();
+
+
+        //setLayout(new GridLayout(3,3, 10, 10));
+        setLayout(new FlowLayout());
+
+        setVisible(true);
+    }
+    private void initComponents() {
+        Logger logger = Logger.getLogger(TicTacToe.class.getName());
 
         JLabel labelStatus = new JLabel();
         labelStatus.setName("LabelStatus");
@@ -40,6 +52,7 @@ public class TicTacToe extends JFrame{
                             clickedCell.setText("O");
                             isNextMoveX = true;
                         }
+                        logger.info(clickedCell.getName() + " clicked");
                         setDrawOrWinningState(board);
                         setStatusLabel(labelStatus);
 
@@ -60,18 +73,13 @@ public class TicTacToe extends JFrame{
                     board[temp1 -1][temp2].setText(" ");
                 }
             }
+            logger.info(buttonReset.getName() + " clicked");
             gameState = State.NOT_STARTED;
             isNextMoveX = true;
             setStatusLabel(labelStatus);
         });
         add(buttonReset);
-
-        //setLayout(new GridLayout(3,3, 10, 10));
-        setLayout(new FlowLayout());
-
-        setVisible(true);
     }
-
     public String isWon(Cell[][] board) {
         for (int i = 0; i < 3; i++) {
             if (!board[i][0].getText().equals(" ") && board[i][0].getText().equals(board[i][1].getText()) && board[i][1].getText().equals(board[i][2].getText())) {
