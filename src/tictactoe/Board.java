@@ -14,6 +14,7 @@ public class Board extends JPanel{
     public static boolean isNextMoveX = true;
     public Board() {
 
+
         Logger logger = Logger.getLogger(Board.class.getName());
         logger.log(Level.WARNING, "Hello " + logger.getName());
         setBorder(new EmptyBorder(10, 10, 10, 10));
