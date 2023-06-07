@@ -16,7 +16,8 @@ public class StatusLabel extends JPanel {
     public void setStatusLabel() {
         switch (TicTacToe.getGameState()) {
             case NOT_STARTED -> statusLabel.setText("Game is not started");
-            case IN_PROGRESS -> statusLabel.setText("Game in progress");
+            case X_TURN -> statusLabel.setText("Player X turn");
+            case O_TURN -> statusLabel.setText("Player O turn");
             case X_WINS -> statusLabel.setText("X wins");
             case O_WINS -> statusLabel.setText("O wins");
             case DRAW -> statusLabel.setText("Draw");

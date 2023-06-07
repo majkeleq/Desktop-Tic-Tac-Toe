@@ -7,7 +7,7 @@ import java.awt.*;
 
 public class TicTacToe extends JFrame {
     public enum State {
-        NOT_STARTED, IN_PROGRESS, X_WINS, O_WINS, DRAW
+        NOT_STARTED, X_WINS, O_WINS, DRAW, X_TURN, O_TURN
     }
 
     public static State gameState = State.NOT_STARTED;
@@ -24,8 +24,8 @@ public class TicTacToe extends JFrame {
         setSize(450, 600);
         setLocationRelativeTo(null); // added
         Board board = new Board(statusLabel);
-        JPanel taskBar = new TaskBar(board, statusLabel);
-        JMenuBar menuBar = new MenuBar();
+        TaskBar taskBar = new TaskBar(board, statusLabel);
+        JMenuBar menuBar = new MenuBar(taskBar);
         setJMenuBar(menuBar);
         add(taskBar);
         add(board);

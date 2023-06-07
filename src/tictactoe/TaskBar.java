@@ -4,13 +4,16 @@ import javax.swing.*;
 import java.awt.*;
 
 public class TaskBar extends JPanel {
+    private final JButton buttonPlayer1 = new TaskBarButton("Human");
+    private final JButton buttonPlayer2 = new TaskBarButton("Human");
+    private final JButton buttonStartReset = new TaskBarButton("Start");
     public TaskBar(Board board, StatusLabel statusLabel) {
         setPreferredSize(new Dimension(450,50));
-        JButton buttonPlayer1 = new TaskBarButton("Human");
+
         buttonPlayer1.setName("ButtonPlayer1");
-        JButton buttonPlayer2 = new TaskBarButton("Human");
+
         buttonPlayer2.setName("ButtonPlayer2");
-        JButton buttonStartReset = new TaskBarButton("Start");
+
         buttonStartReset.setName("ButtonStartReset");
 
         addPlayerChangeListener(buttonPlayer1);
@@ -46,5 +49,18 @@ public class TaskBar extends JPanel {
                 button.setText("Human");
             }
         });
+    }
+    private void setButtonPlayer1(String text) {
+        buttonPlayer1.setText(text);
+    }
+    private void setButtonPlayer2(String text) {
+        buttonPlayer2.setText(text);
+    }
+    public void doStart(String player1, String player2) {
+        if( buttonStartReset.getText().equals("Start")) {
+            setButtonPlayer1(player1);
+            setButtonPlayer2(player2);
+            buttonStartReset.doClick();
+        }
     }
 }
