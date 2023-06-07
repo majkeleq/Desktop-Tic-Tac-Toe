@@ -1,139 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TicTacToeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-16T17:37:31" hostname="DESKTOP-77HAML8" time="18.641">
+<testsuite name="TicTacToeTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-06-07T08:03:32" hostname="DESKTOP-77HAML8" time="2.731">
   <properties/>
-  <testcase name="start" classname="TicTacToeTest" time="18.641"/>
+  <testcase name="start" classname="TicTacToeTest" time="2.731">
+    <failure message="java.lang.AssertionError: Error in test #1&#10;&#10;Cannot find a component of class JMenuItem with name MenuHumanHuman" type="java.lang.AssertionError">java.lang.AssertionError: Error in test #1
+
+Cannot find a component of class JMenuItem with name MenuHumanHuman
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.hyperskill.hstest.stage.StageTest.start(StageTest.java:203)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$2.run(TestWorker.java:176)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</failure>
+  </testcase>
   <system-out><![CDATA[?[1;31m
 Start test 1?[0m
-?[1;31m
-Start test 2?[0m
-?[1;31m
-Start test 3?[0m
-?[1;31m
-Start test 4?[0m
-?[1;31m
-Start test 5?[0m
-?[1;31m
-Start test 6?[0m
-?[1;31m
-Start test 7?[0m
-?[1;31m
-Start test 8?[0m
-?[1;31m
-Start test 9?[0m
-?[1;31m
-Start test 10?[0m
-?[1;31m
-Start test 11?[0m
-?[1;31m
-Start test 12?[0m
-?[1;31m
-Start test 13?[0m
-?[1;31m
-Start test 14?[0m
-?[1;31m
-Start test 15?[0m
-?[1;31m
-Start test 16?[0m
-?[1;31m
-Start test 17?[0m
-?[1;31m
-Start test 18?[0m
-?[1;31m
-Start test 19?[0m
-?[1;31m
-Start test 20?[0m
-?[1;31m
-Start test 21?[0m
-?[1;31m
-Start test 22?[0m
-?[1;31m
-Start test 23?[0m
-?[1;31m
-Start test 24?[0m
-?[1;31m
-Start test 25?[0m
-?[1;31m
-Start test 26?[0m
-?[1;31m
-Start test 27?[0m
-?[1;31m
-Start test 28?[0m
-?[1;31m
-Start test 29?[0m
-?[1;31m
-Start test 30?[0m
-?[1;31m
-Start test 31?[0m
-?[1;31m
-Start test 32?[0m
-?[1;31m
-Start test 33?[0m
-?[1;31m
-Start test 34?[0m
-?[1;31m
-Start test 35?[0m
-?[1;31m
-Start test 36?[0m
-?[1;31m
-Start test 37?[0m
-?[1;31m
-Start test 38?[0m
-?[1;31m
-Start test 39?[0m
-?[1;31m
-Start test 40?[0m
-?[1;31m
-Start test 41?[0m
-?[1;31m
-Start test 42?[0m
-?[1;31m
-Start test 43?[0m
-?[1;31m
-Start test 44?[0m
-?[1;31m
-Start test 45?[0m
-?[1;31m
-Start test 46?[0m
-?[1;31m
-Start test 47?[0m
-?[1;31m
-Start test 48?[0m
-?[1;31m
-Start test 49?[0m
-?[1;31m
-Start test 50?[0m
-?[1;31m
-Start test 51?[0m
-?[1;31m
-Start test 52?[0m
-?[1;31m
-Start test 53?[0m
-?[1;31m
-Start test 54?[0m
-?[1;31m
-Start test 55?[0m
-?[1;31m
-Start test 56?[0m
-?[1;31m
-Start test 57?[0m
-?[1;31m
-Start test 58?[0m
-?[1;31m
-Start test 59?[0m
-?[1;31m
-Start test 60?[0m
-?[1;31m
-Start test 61?[0m
-?[1;31m
-Start test 62?[0m
-?[1;31m
-Start test 63?[0m
-?[1;31m
-Start test 64?[0m
-?[1;31m
-Start test 65?[0m
 ]]></system-out>
-  <system-err><![CDATA[mar 16, 2023 6:37:31 PM tictactoe.Board <init>
+  <system-err><![CDATA[cze 07, 2023 10:03:33 AM tictactoe.Board <init>
 WARNING: Hello tictactoe.Board
 ]]></system-err>
 </testsuite>

@@ -1,5 +1,7 @@
 package tictactoe;
 
+import tictactoe.menus.MenuBar;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -23,9 +25,12 @@ public class TicTacToe extends JFrame {
         setLocationRelativeTo(null); // added
         Board board = new Board(statusLabel);
         JPanel taskBar = new TaskBar(board, statusLabel);
+        JMenuBar menuBar = new MenuBar();
+        setJMenuBar(menuBar);
         add(taskBar);
         add(board);
         add(statusLabel);
+
 
         setLayout(new FlowLayout());
 
