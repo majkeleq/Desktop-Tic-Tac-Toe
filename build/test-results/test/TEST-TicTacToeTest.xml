@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TicTacToeTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-06-07T08:03:32" hostname="DESKTOP-77HAML8" time="2.731">
+<testsuite name="TicTacToeTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-06-07T10:48:18" hostname="DESKTOP-77HAML8" time="4.274">
   <properties/>
-  <testcase name="start" classname="TicTacToeTest" time="2.731">
-    <failure message="java.lang.AssertionError: Error in test #1&#10;&#10;Cannot find a component of class JMenuItem with name MenuHumanHuman" type="java.lang.AssertionError">java.lang.AssertionError: Error in test #1
+  <testcase name="start" classname="TicTacToeTest" time="4.274">
+    <failure message="java.lang.AssertionError: Wrong answer in test #10&#10;&#10;Once the game is started, change the 'Start' button to 'Reset'" type="java.lang.AssertionError">java.lang.AssertionError: Wrong answer in test #10
 
-Cannot find a component of class JMenuItem with name MenuHumanHuman
+Once the game is started, change the 'Start' button to 'Reset'
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.hyperskill.hstest.stage.StageTest.start(StageTest.java:203)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -54,8 +54,26 @@ Cannot find a component of class JMenuItem with name MenuHumanHuman
   </testcase>
   <system-out><![CDATA[?[1;31m
 Start test 1?[0m
+?[1;31m
+Start test 2?[0m
+?[1;31m
+Start test 3?[0m
+?[1;31m
+Start test 4?[0m
+?[1;31m
+Start test 5?[0m
+?[1;31m
+Start test 6?[0m
+?[1;31m
+Start test 7?[0m
+?[1;31m
+Start test 8?[0m
+?[1;31m
+Start test 9?[0m
+?[1;31m
+Start test 10?[0m
 ]]></system-out>
-  <system-err><![CDATA[cze 07, 2023 10:03:33 AM tictactoe.Board <init>
+  <system-err><![CDATA[cze 07, 2023 12:48:18 PM tictactoe.Board <init>
 WARNING: Hello tictactoe.Board
 ]]></system-err>
 </testsuite>
