@@ -57,10 +57,11 @@ public class TaskBar extends JPanel {
         buttonPlayer2.setText(text);
     }
     public void doStart(String player1, String player2) {
-        if( buttonStartReset.getText().equals("Start")) {
+        if (buttonStartReset.getText().equals("Reset")) {
+            buttonStartReset.doClick();
+        }
             setButtonPlayer1(player1);
             setButtonPlayer2(player2);
             buttonStartReset.doClick();
-        }
     }
 }
