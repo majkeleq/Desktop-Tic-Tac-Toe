@@ -5,6 +5,8 @@ import java.awt.*;
 
 public class StatusLabel extends JPanel {
 
+    String player;
+
     JLabel statusLabel = new JLabel();
     public StatusLabel() {
         statusLabel.setName("LabelStatus");
@@ -13,16 +15,22 @@ public class StatusLabel extends JPanel {
         add(statusLabel);
         setVisible(true);
     }
+
+    public void setPlayer(String player) {
+        this.player = player;
+    }
+
     public void setStatusLabel() {
         switch (TicTacToe.getGameState()) {
             case NOT_STARTED -> statusLabel.setText("Game is not started");
-            case X_TURN -> statusLabel.setText("Player X turn");
-            case O_TURN -> statusLabel.setText("Player O turn");
-            case X_WINS -> statusLabel.setText("X wins");
-            case O_WINS -> statusLabel.setText("O wins");
+            case X_TURN -> statusLabel.setText("The turn of " + player + " Player (X)");
+            case O_TURN -> statusLabel.setText("The turn of " + player + " Player (O)");
+            case X_WINS -> statusLabel.setText("The " + player + " Player (X) wins");
+            case O_WINS -> statusLabel.setText("The " + player + " Player (O) wins");
             case DRAW -> statusLabel.setText("Draw");
         }
     }
+
     public JLabel getStatusLabel() {
         return statusLabel;
     }

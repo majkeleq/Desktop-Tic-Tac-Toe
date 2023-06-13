@@ -4,8 +4,8 @@ import java.util.Arrays;
 import java.util.stream.Stream;
 
 public class HumanPlayer extends Player {
-    public HumanPlayer(String sign) {
-        super(sign);
+    public HumanPlayer(String sign, String type) {
+        super(sign, type);
     }
 
     @Override

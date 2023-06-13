@@ -34,17 +34,26 @@ public class Board extends JPanel {
                         if (e.getSource() instanceof Cell clickedCell
                                 && (TicTacToe.getGameState().equals(TicTacToe.State.X_TURN)
                                 || TicTacToe.getGameState().equals(TicTacToe.State.O_TURN))) {
-                            if (isNextMoveX) {
-                                clickedCell.setText("X");
-                                TicTacToe.setGameState(TicTacToe.State.O_TURN);
-                            } else {
-                                clickedCell.setText("O");
-                                TicTacToe.setGameState(TicTacToe.State.X_TURN);
+                            if (clickedCell.getText().equals(" ")) {
+                                if (isNextMoveX) {
+                                    clickedCell.setText("X");
+                                    statusLabel.setPlayer(player2.getType());
+                                    TicTacToe.setGameState(TicTacToe.State.O_TURN);
+                                } else {
+                                    clickedCell.setText("O");
+                                    statusLabel.setPlayer(player1.getType());
+                                    TicTacToe.setGameState(TicTacToe.State.X_TURN);
+                                }
+                                isNextMoveX = !isNextMoveX;
+                                checker.setDrawOrWinningState(board);
+                                switch (TicTacToe.getGameState()) {
+                                    case X_WINS -> statusLabel.setPlayer(player1.getType());
+                                    case O_WINS -> statusLabel.setPlayer(player2.getType());
+                                }
+                                statusLabel.setStatusLabel();
+                                makeMoveIfRobot();
                             }
-                            isNextMoveX = !isNextMoveX;
-                            checker.setDrawOrWinningState(board);
-                            this.statusLabel.setStatusLabel();
-                            makeMoveIfRobot();
+
                         }
                     }
 
@@ -82,18 +91,19 @@ public class Board extends JPanel {
 
     public void startBoard(String pl1, String pl2) {
         Stream.of(board).flatMap(Arrays::stream).forEach(cell -> cell.setEnabled(true));
-        TicTacToe.setGameState(TicTacToe.State.X_TURN);
-        statusLabel.setStatusLabel();
         if (pl1.equals("Human")) {
-            player1 = new HumanPlayer("X");
+            player1 = new HumanPlayer("X", pl1);
         } else {
-            player1 = new RobotPlayer("X");
+            player1 = new RobotPlayer("X", pl1);
         }
         if (pl2.equals("Human")) {
-            player2 = new HumanPlayer("O");
+            player2 = new HumanPlayer("O", pl2);
         } else {
-            player2 = new RobotPlayer("O");
+            player2 = new RobotPlayer("O", pl2);
         }
+        statusLabel.setPlayer(player1.getType());
+        TicTacToe.setGameState(TicTacToe.State.X_TURN);
+        statusLabel.setStatusLabel();
         if (player1.getClass().equals(RobotPlayer.class)) {
             player1.move(board);
         }

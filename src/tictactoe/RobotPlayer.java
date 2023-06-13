@@ -7,8 +7,8 @@ import java.util.stream.Stream;
 
 public class RobotPlayer extends Player {
 
-    public RobotPlayer(String sign) {
-        super(sign);
+    public RobotPlayer(String sign, String type) {
+        super(sign, type);
     }
 
     @Override
